@@ -8,6 +8,7 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 
@@ -15,7 +16,7 @@
     <!-- Cabeçalho da Página (header) -->
     <header>
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
@@ -50,10 +51,11 @@
 
     <!-- Seção Principal da Página (main) -->
     <main>
-        <section id="about">
+        <section id="about" class="flex_start">
             <h2>Sobre mim</h2>
-            <div id="conteudo">
-                <img src="./assets/img/user_02.svg" alt="Foto do criador desse conteudo" />
+            <div id="conteudo" class="flex">
+                <img src="assets/img/imagemBruna.jpeg" alt="Foto do criador desse conteudo"
+                class="img_profile" />
                 <article id="sobre_texto">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing
@@ -81,9 +83,9 @@
             </div>
         </section>
 
-        <section id="video">
+        <section id="video" class="flex_start">
             <h2>Meu vídeo favorito:</h2>
-            <div class="youtube">
+            <div class="youtube" class="flex">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/hxCvJJv2vw8?si=CtRHcqjM97tYBxJf"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -95,16 +97,16 @@
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
+    <footer class="flex">
         <section id="redes_sociais">
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="linkedin">
+            <a href="" >
+                <img src="assets/img/linkedin.svg" alt="linkedin" class="social_icon">
             </a>
-            <a href="">
-                <img src="assets/img/github.svg" alt="github">
+            <a href="" >
+                <img src="assets/img/github.svg" alt="github" class="social_icon">
             </a>
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="instagram">
+            <a href="" >
+                <img src="assets/img/instagram.svg" alt="instagram" class="social_icon">
             </a>
 
         </section>
